@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta author = "David Daniel">
+        <title>Chat</title>
+
+    </head>
+    <style type="text/css">
+    * {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    }
+    p {
+    line-height: 18px;
+    }
+
+    .header{
+    background-color: #0a5ea2;
+    font-size: 30px;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    margin-top: 2%;
+    }
+    .container{
+    border:thick solid black;
+    height: 600px;
+    width: 800px;
+    display: flex;
+    margin: auto;
+    }
+    .inset{
+    border:thin solid red;
+    height: 600px;
+    flex: 2;
+    align-self: center;
+    }
+    .sidebar{
+    border:thick solid blue;
+    flex: .40;
+    overflow-y: scroll;
+    }
+    .input{
+    border:thick solid green;
+    height: 30px;
+    width: 800px;
+    display: flex;
+    margin: auto;
+    }
+    input {
+    flex: 2;
+    align-self: right;
+    }
+    #name{
+    border:thick solid yellow;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+
+    }
+    #chat{
+        list-style: none;
+    }
+
+    </style>
+    <header>
+        <div class="header">Chat App</div>
+
+    </header>
+    <body>
+        <div class="container">
+            <div class="sidebar" id="channels">
+            </div>
+            <div class="inset">
+                <ul id="chat"></ul>
+            </div>
+            <div class="sidebar" id="users">
+
+            </div>
+
+
+        </div>
+        <div class="input">
+            <input placeholder="Type here" id="input"></input>
+        </div>
+        <!-- <div id="name"></div> -->
+        <script type="text/javascript" src="appClient.js">
+        </script>
+        <script>
+        </script>
+    </body>
+</html>
